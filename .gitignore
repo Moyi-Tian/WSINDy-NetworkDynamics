@@ -1,0 +1,25 @@
+cat > .gitignore << 'EOF'
+# macOS
+.DS_Store
+
+# MATLAB autosave and temporary files
+*.asv
+*.m~
+*.tmp
+
+# Logs
+*.log
+
+# Generated data and results
+**/Data/
+**/data/
+**/Results/
+**/results/
+**/Figures/
+**/figures/
+**/*.mat
+**/*.fig
+EOF
+
+# Claude local settings
+.claude/
