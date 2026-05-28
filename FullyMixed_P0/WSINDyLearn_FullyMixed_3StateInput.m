@@ -329,7 +329,7 @@ if save_result == 1
     end
 
     if exist('true_nz_weights', 'var')
-        fname = sprintf('WSINDy Results for Fully-Mixed Network Dynamics P0 Batch Data numTrajUpTo=%u, P0_=%.5g-%.5g, beta=%.3g, theta=%.3g, eta=%.3g, gamma_i=%.3g, gamma_p=%.3g, tmax=%u, t_grid_num=%u, NumNoise=%u, repeat=%u_noise_%.5g-%.5g_MSTLS_Wboth.mat',num_trajs_upto,start_val,end_val,beta,theta,eta,gamma_i,gamma_p,time_range(end),t_num,numNoise,rept,noise_ratios(1),noise_ratios(end));
+        fname = sprintf('WSINDy Results for Fully-Mixed Network Dynamics P0 Batch Data numTrajUpTo=%u, P0_=%.5g-%.5g, beta=%.3g, theta=%.3g, eta=%.3g, gamma_i=%.3g, gamma_p=%.3g, tmax=%u, t_grid_num=%u, NumNoise=%u, repeat=%u_noise_%.5g-%.5g_MSTLS.mat',num_trajs_upto,start_val,end_val,beta,theta,eta,gamma_i,gamma_p,time_range(end),t_num,numNoise,rept,noise_ratios(1),noise_ratios(end));
         weights_true = w_true;
         save(fullfile(save_path, fname),...
                    'Tps_cell', 'CoeffErr_cell', 'EquationErr_cell', ...
