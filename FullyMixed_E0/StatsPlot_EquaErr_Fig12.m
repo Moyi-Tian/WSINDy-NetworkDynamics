@@ -162,14 +162,12 @@ for eq = eq_to_plot
     set(ax, 'FontSize', 18);
 
     xlabel('Number of Trajectories', ...
-        'FontSize', 22, ...
-        'Interpreter', 'latex');
+        'FontSize', 22);
 
     % Show y-axis label only for E, not P
     if eq == 2
         ylabel('Equation Error', ...
-            'FontSize', 22, ...
-            'Interpreter', 'latex');
+            'FontSize', 22);
     else
         ylabel('');
     end

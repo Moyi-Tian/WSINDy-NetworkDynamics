@@ -1,4 +1,5 @@
 %% Appendix boxplots: stochastic output error cross-section at one k
+
 % Before running this script, run Compute_Store_AvgOutErr.m first to get
 % summary matrices.
 
@@ -168,13 +169,11 @@ for s = 1:3
     set(ax, 'FontSize', 22);
 
     xlabel('Number of Trajectories', ...
-        'FontSize', 28, ...
-        'Interpreter', 'latex');
+        'FontSize', 28);
 
     if s == 1
         ylabel('Output Error', ...
-            'FontSize', 28, ...
-            'Interpreter', 'latex');
+            'FontSize', 28);
     else
         ylabel('');
     end

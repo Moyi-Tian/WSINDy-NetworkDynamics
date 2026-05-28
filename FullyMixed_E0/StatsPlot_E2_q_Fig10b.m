@@ -137,7 +137,7 @@ end
 
 set(gca, 'FontSize', 18);
 xlabel('Number of Trajectories', 'FontSize', 20);
-ylabel(metric_label, 'FontSize', 20, 'Interpreter', 'latex');
+ylabel(metric_label, 'FontSize', 24, 'Interpreter', 'latex');
 drawnow;
 
 %% Save figure

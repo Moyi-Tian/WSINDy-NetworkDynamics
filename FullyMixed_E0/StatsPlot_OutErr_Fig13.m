@@ -44,7 +44,7 @@ load(fullfile(save_path, fname))
 
 %% User choices
 plot_trajNum_to = 5;
-selected_noise_level = 0.05;    % change this as needed
+selected_noise_level = 0.08;    % change this as needed
 use_log_scale = true;           % set false if you want linear scale
 
 eq_letters = {'U','E','P'};
@@ -162,14 +162,12 @@ for eq = eq_to_plot
     set(ax, 'FontSize', 18);
 
     xlabel('Number of Trajectories', ...
-        'FontSize', 22, ...
-        'Interpreter', 'latex');
+        'FontSize', 22);
 
     % Show y-axis label only for E, not P
     if eq == 2
         ylabel('Output Error', ...
-            'FontSize', 22, ...
-            'Interpreter', 'latex');
+            'FontSize', 22);
     else
         ylabel('');
     end
